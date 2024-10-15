@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            margin: 0px;
+        }
+        #cname,#cpass,#cphone,#cemail,#recname{
+            border-radius: 10px;
+            height: 35px;
+            width: 90%;
+        }
+        #form{
+            background-color: white;
+            border: 1px solid black;
+            padding: 60px;
+            width: 500px;
+            margin-left: 450px;
+            margin-top: 40px;
+            border-radius: 30px;
+        }
+        nav{
+            background-color: white;
+            display: flex;
+            height: 30px;
+            /* border: 1px solid black; */
+
+            padding: 20px;
+            position: sticky;
+            top: 0px;
+
+            }
+        nav>p{
+            display: inline-block;
+             line-height: 0px;
+            padding-left: 800px;
+            }
+            sup{
+                color: red;
+            }
+
+       
+        .required{
+            padding-left: 10px;
+        }
+        input[type="submit"]{
+            background-color: #265df5;
+            color: white;
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 210px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Already <a href="reclogin.html">Registered</a>? Login here</p>
+    </nav>
+    <div id="form">
+        <legend><h1>Create your account</h1></legend><br>
+    <form action="">
+        <label for="cname">company Name<sup>*</sup></label><br>
+        <input class="required" type="text" name="companyname" id="cname" placeholder="What is your organization name?" autofocus required><br>
+        <br>
+        <label for="">Company type</label>
+        <br>
+        <br>
+        <input type="radio" name="ctype" id="company"><label for="company">company</label>
+        <input type="radio" name="ctype" id="consultancy"><label for="consultancy">consultancy</label><br>
+        <br>
+        <label for="cemail">Email address<sup>*</sup></label><br>
+        <input class="required" type="email" name="companymail" id="cemail" placeholder="Tell us your official Email Id" required>
+        <br>
+        <br>
+        
+        <label for="cphone">Phone<sup>*</sup></label><br>
+        <input class="required" type="phone" name="cmobo" id="cphone" required placeholder="enter the recruiter mobile number">
+        <br>
+        <br>
+        <label for="recname">recruiter name<sup>*</sup></label>
+        <br>
+        <input class="required" type="text" name="rname" id="recname" required placeholder="contact persons name">
+        <br>
+        <br>
+
+        <label for="pass">Password<sup>*</sup></label>
+        <input class="required" type="password" name="password" id="cpass" required min="6" placeholder="Must contain 6 characters">
+        <br>
+        <br>
+
+        <input type="submit" value="submit">
+
+    </form>
+    </div>
+</body>
+</html>
